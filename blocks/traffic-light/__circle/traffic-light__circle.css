@@ -1,0 +1,8 @@
+.traffic-light__circle {
+  margin: 10px auto;
+  padding: 90% 0px 0px 0px;
+  width: 90%;
+  border-radius: 50%;
+  box-shadow: 0 -10px 1px rgb(60 60 60);
+  position: relative;
+}

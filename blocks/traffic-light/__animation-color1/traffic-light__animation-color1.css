@@ -1,0 +1,20 @@
+@keyframes color1 {
+  0% {
+    opacity: 1;
+  }
+  5% {
+    opacity: 0;
+  }
+  10%, 25% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  35%, 100% {
+    opacity: 1;
+  }
+}
+.traffic-light__animation-color1{
+  animation: color1 15s infinite ease-in-out;
+}

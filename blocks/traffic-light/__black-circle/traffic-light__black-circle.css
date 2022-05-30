@@ -1,0 +1,10 @@
+.traffic-light__black-circle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding-top: 100%;
+  background-color: #000;
+  border-radius: 50%;
+  opacity: 1;
+}

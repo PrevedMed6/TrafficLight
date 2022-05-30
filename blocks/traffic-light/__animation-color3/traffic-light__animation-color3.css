@@ -1,0 +1,17 @@
+@keyframes color3 {
+  0%,60% {
+    opacity: 1;
+  }
+  65% {
+    opacity: 0;
+  }
+  70%, 95% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.traffic-light__animation-color3{
+  animation: color3 15s infinite ease-in-out;
+}

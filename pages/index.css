@@ -1,0 +1,14 @@
+@import url(../vendor/normalize.css);
+@import url(../blocks/page/page.css);
+@import url(../blocks/traffic-light-container/traffic-light-container.css);
+@import url(../blocks/traffic-light/traffic-light.css);
+@import url(../blocks/traffic-light/__element/traffic-light__element.css);
+@import url(../blocks/traffic-light/__circle/traffic-light__circle.css);
+@import url(../blocks/traffic-light/__black-circle/traffic-light__black-circle.css);
+@import url(../blocks/traffic-light/__black-circle/_hidden/traffic-light__black-circle_hidden.css);
+@import url(../blocks/traffic-light/__button/traffic-light__button.css);
+@import url(../blocks/traffic-light/__red/traffic-light__red.css);
+@import url(../blocks/traffic-light/__animation-color1/traffic-light__animation-color1.css);
+@import url(../blocks/traffic-light/__animation-color2/traffic-light__animation-color2.css);
+@import url(../blocks/traffic-light/__animation-color3/traffic-light__animation-color3.css);
+
