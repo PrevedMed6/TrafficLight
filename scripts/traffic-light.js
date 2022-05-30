@@ -52,7 +52,7 @@ function createTrafficLight(container, color1='red',  color2='yellow', color3='g
     counter = counter < 2 ? counter+1 : 0;
   };
 
-  function autoMode ()
+  function autoMode (evt)
   {
     const activeCircle = trafficLightBox.querySelector(".traffic-light__black-circle_hidden");
     activeCircle?.classList.remove('traffic-light__black-circle_hidden');
@@ -60,6 +60,7 @@ function createTrafficLight(container, color1='red',  color2='yellow', color3='g
       el.classList.add(`traffic-light__animation-color${index+1}`);
     });
     trafficLightBox.append(createTrafficButton ("Stop", stopAutoMode, true));
+    autoButton.setAttribute('disabled','disabled');
   };
 
   function stopAutoMode(evt)
@@ -67,6 +68,7 @@ function createTrafficLight(container, color1='red',  color2='yellow', color3='g
     blackCircleElements.forEach(function(el, index){
       el.classList.remove(`traffic-light__animation-color${index+1}`);
     });
+    autoButton.removeAttribute('disabled');
     evt.target.remove();
   }
 
@@ -77,7 +79,8 @@ function createTrafficLight(container, color1='red',  color2='yellow', color3='g
   trafficLightElement.append(createCircle(color3));
   trafficLightBox.append(trafficLightElement);
   trafficLightBox.append(createTrafficButton('Switch', manualMode));
-  trafficLightBox.append(createTrafficButton('Automatic mode', autoMode));
+  const autoButton = createTrafficButton('Automatic mode', autoMode);
+  trafficLightBox.append(autoButton);
   container.append(trafficLightBox);
   const blackCircleElements = trafficLightBox.querySelectorAll('.traffic-light__black-circle');
 }
