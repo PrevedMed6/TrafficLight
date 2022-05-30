@@ -1,5 +1,5 @@
 .traffic-light__button {
-  width: min(240px,100%);
+  width: min(150px,100%);
   border-radius: 10px;
   height: 50px;
   background-color: #808080;
