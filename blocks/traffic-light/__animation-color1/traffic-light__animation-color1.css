@@ -2,19 +2,19 @@
   0% {
     opacity: 1;
   }
-  5% {
+  3% {
     opacity: 0;
   }
-  10%, 25% {
+  5%, 20% {
     opacity: 0;
   }
-  30% {
+  25% {
     opacity: 1;
   }
-  35%, 100% {
+  30%, 100% {
     opacity: 1;
   }
 }
 .traffic-light__animation-color1{
-  animation: color1 15s infinite ease-in-out;
+  animation: color1 20s infinite ease-in-out;
 }

@@ -1,5 +1,6 @@
 function createTrafficLight(container, color1='red',  color2='yellow', color3='green') {
   let counter = 0;
+  let step = 1;
   if(!container)
   {
     return;
@@ -49,7 +50,11 @@ function createTrafficLight(container, color1='red',  color2='yellow', color3='g
     const activeCircle = trafficLightBox.querySelector(".traffic-light__black-circle_hidden");
     activeCircle?.classList.remove('traffic-light__black-circle_hidden');
     blackCircleElements[counter].classList.add('traffic-light__black-circle_hidden');
-    counter = counter < 2 ? counter+1 : 0;
+    counter = counter+step;
+    if(counter === 0 || counter === blackCircleElements.length - 1 )
+    {
+      step = (-1)*step;
+    }
   };
 
   function autoMode (evt)
